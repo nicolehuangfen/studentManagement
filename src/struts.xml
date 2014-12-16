@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+	"-//Apache Software Foundation//DTD Struts Configuration 2.3//EN"
+	"http://struts.apache.org/dtds/struts-2.3.dtd">
+
+<struts>
+	<package name="stu" extends="struts-default">
+		<action name="add" class="com.cn.action.AddAction">
+			<result name="success">/query.jsp</result>
+			<result name="input">/fail.jsp</result>
+		</action>
+		<action name="query" class="com.cn.action.QueryAction">
+			<result name="success">/query.jsp</result>
+		</action>
+		<action name="inputDelId" class="com.cn.action.InputAction">
+			<result name="success">/delete.jsp</result>
+		</action>
+		<action name="delete" class="com.cn.action.DeleteAction">
+			<result name="success">/query.jsp</result>
+			<result name="input">/delete.jsp</result>
+		</action>
+		<action name="inputUpdateId" class="com.cn.action.InputAction">
+			<result name="success">/update.jsp</result>
+		</action>
+		<action name="update" class="com.cn.action.UpdateAction">
+			<result name="success">/query.jsp</result>
+			<result name="input">/update.jsp</result>
+		</action>
+	</package>
+</struts>
